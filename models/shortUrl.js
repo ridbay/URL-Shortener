@@ -11,4 +11,4 @@ const urlSchema = new Schema({
 
 const ModelClass = mongoose.model('shortUrl', urlSchema);
 
-model.export = ModelClass;
+module.export = ModelClass;

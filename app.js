@@ -13,7 +13,7 @@ app.use(useragent.express())
 const shortUrl = require('./models/shortUrl')
 
 // connect to database
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/shortUrls');
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/shortUrls', { useNewUrlParser: true });
 
 
 
