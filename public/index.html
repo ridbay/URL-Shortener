@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shortUrlApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="../public/scripts/app.js"></script>
+    <title>Apis and Microservices Projects - URL Shortener Microservice</title>
+</head>
+<body class="text-center">
+    <header>
+        <h3>URL Shortener Microservice</h3>
+        <h4><a href="http://" target="_blank">FreeCodeCamp Projects</a> </h4>
+        <h5>Tutorials</h5>
+        <img src="" alt="">
+    </header>
+    <section ng-controller='shortAppCtrl'>
+
+        <input type="text" placeholder="Enter URL" ng-model="urlToShorten">
+        <a href="http://" class="btn btn-primary" ng-href='/new/{{urlToShorten}}'>Get Short URL</a>
+    </section>
+</body>
+</html>
